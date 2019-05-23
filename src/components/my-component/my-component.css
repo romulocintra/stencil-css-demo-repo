@@ -1,0 +1,94 @@
+
+:host {
+  /**
+   * @prop --background: Background of the alert
+   *
+   * @prop --min-width: Minimum width of the alert
+   * @prop --width: Width of the alert
+   * @prop --max-width: Maximum width of the alert
+   *
+   * @prop --min-height: Minimum height of the alert
+   * @prop --height: Height of the alert
+   * @prop --max-height: Maximum height of the alert
+   */
+
+}
+
+:host(.overlay-hidden) {
+  display: none;
+}
+
+
+
+
+.alert-message {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+
+.alert-checkbox-group::-webkit-scrollbar,
+.alert-radio-group::-webkit-scrollbar,
+.alert-message::-webkit-scrollbar {
+  display: none;
+}
+
+.alert-button-group {
+  display: flex;
+
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.alert-button-group-vertical {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.alert-button-inner {
+  display: flex;
+
+  flex-flow: row nowrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.alert-tappable {
+
+
+  display: flex;
+
+  width: 100%;
+
+  border: 0;
+
+  background: transparent;
+
+  font-size: inherit;
+
+  line-height: initial;
+
+  text-align: start;
+  appearance: none;
+
+  contain: strict;
+}
+
+.alert-button,
+.alert-checkbox,
+.alert-input,
+.alert-radio {
+  outline: none;
+}
+
+.alert-radio-icon,
+.alert-checkbox-icon,
+.alert-checkbox-inner {
+  box-sizing: border-box;
+}
